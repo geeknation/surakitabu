@@ -5,14 +5,12 @@
         <meta charset="utf-8" />
         <title>Facebook Login Test</title>
         <script type="text/javascript" src="fblogin.js"></script>
-         
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     </head>
     <body>
         <div id="status"></div>
         <div id="facebook_reg">
-            <fb:login-button scope="public_profile,email,read_friendlists" onlogin="checkLoginState();">
-            </fb:login-button>
+            <button id="fb-login" onclick="checkLoginState()" class="btn btn-primary">Create Account With Facebook</button>
         </div>
-
     </body>
 </html>
